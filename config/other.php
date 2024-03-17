@@ -21,7 +21,7 @@ return [
     |
     */
 
-    'title' => 'Lat-Team',
+    'title' => 'F1Carreras',
 
     /*
     |--------------------------------------------------------------------------
@@ -32,7 +32,7 @@ return [
     |
     */
 
-    'subTitle' => 'Poder Latino',
+    'subTitle' => 'Carreras F1 Multi-Audio en HD y 4K',
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'meta_description' => 'Poder Latino',
+    'meta_description' => 'F1Carreras',
 
     /*
     |--------------------------------------------------------------------------
@@ -64,7 +64,7 @@ return [
     | Date Site Was Born
     |
     */
-    'birthdate' => 'January 20th 2020',
+    'birthdate' => 'March 15th 2024',
 
     /*
     |--------------------------------------------------------------------------
@@ -74,7 +74,7 @@ return [
     | Global Freeleech
     |
     */
-    'freeleech' => false,
+    'freeleech' => true,
 
     'freeleech_until' => '12/23/2017 3:00 PM EST',
 
@@ -107,7 +107,7 @@ return [
     |
     */
 
-    'ratio' => 0.25,
+    'ratio' => 0.01,
 
     /*
     |--------------------------------------------------------------------------
@@ -120,7 +120,7 @@ return [
     | Restricted mode for invites. If set to true, invites will be restricted
     | Exempt these groups from the invite restrictions
     */
-    'invite-only'   => true,
+    'invite-only'   => false,
     'invite_expire' => '14',
 
     'invites_restriced' => true,
@@ -179,7 +179,7 @@ return [
     | True/1 = Enabled
     | False/0 = Disabled
     */
-    'application_signups' => false,
+    'application_signups' => true,
 
     /*
     |--------------------------------------------------------------------------
