@@ -25,7 +25,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'LAT-TEAM "PODER LATINO"',
+    'name' => 'F1CARRERAS',
 
     /*
     |--------------------------------------------------------------------------
