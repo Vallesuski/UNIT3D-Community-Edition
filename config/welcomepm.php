@@ -21,7 +21,7 @@ return [
     |
     */
 
-    'subject' => 'Bienvenido a Lat-Team',
+    'subject' => 'Bienvenido a F1Carreras / Welcome to F1Carreras',
 
     /*
     |--------------------------------------------------------------------------
@@ -32,7 +32,7 @@ return [
     |
     */
 
-    'message' => 'Bienvenido a [b]Lat-Team[/b].
+    'message' => 'Bienvenido a [b]F1Carreras[/b] / Welcome to [b]F1Carreras[/b].
 
-    - Lat-Team :space_invader:',
+    - F1Carreras :space_invader:',
 ];
