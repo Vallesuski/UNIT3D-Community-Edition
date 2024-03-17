@@ -32,7 +32,7 @@ return [
     |
     */
 
-    'source' => 'Lat-Team "Poder Latino"',
+    'source' => 'F1Carreras',
 
     /*
     |--------------------------------------------------------------------------
@@ -43,7 +43,7 @@ return [
     |
     */
 
-    'created_by'        => 'Edited by Lat-Team "Poder Latino"',
+    'created_by'        => 'Edited by F1Carreras',
     'created_by_append' => true,
 
     /*
@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'comment' => 'Lat-Team "Poder Latino"',
+    'comment' => 'F1Carreras.net',
 
     /*
     |--------------------------------------------------------------------------
