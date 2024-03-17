@@ -21,7 +21,7 @@ return [
     |
     */
 
-    'powered-by' => 'Powered By Lat-Team - Poder Latino',
+    'powered-by' => 'Powered By F1Carreras',
 
     /*
     |--------------------------------------------------------------------------
