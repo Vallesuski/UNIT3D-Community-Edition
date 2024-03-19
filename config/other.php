@@ -160,7 +160,7 @@ return [
     | 12 = Material Design v3 Light
     | 13 = Material Design v3 Dark
     */
-    'default_style' => 13,
+    'default_style' => 0,
 
     /*
     |--------------------------------------------------------------------------
