@@ -31,7 +31,7 @@
             <form class="auth-form__form" method="POST" action="{{ route('login') }}">
                 @csrf
                 <a class="auth-form__branding" href="{{ route('home.index') }}">
-                    <img class="auth-form__site-logo-lateam" src="{{ url('/img/logo.png') }}" alt="LaTeam" />
+                    <img class="auth-form__site-logo-lateam" src="{{ url('/img/f1/logo.png') }}" alt="F1Carreras" />
                 </a>
                 @if (Session::has('warning') || Session::has('success') || Session::has('info'))
                 <ul class="auth-form__important-infos">
@@ -105,8 +105,8 @@
                     {{ __('auth.lost-password') }}
                 </a>
                 <div class="discord-div">
-                    <a class="discord-widget" href="https://discord.gg/RUKj5JfEST" title="Join us on Discord">
-                        <img src="https://discordapp.com/api/guilds/838217297478680596/embed.png?style=banner3">
+                    <a class="discord-widget" href="https://discord.gg/vHYybyRc8h" title="Join us on Discord">
+                        <img src="https://discordapp.com/api/guilds/1219287190601990175/embed.png?style=banner3">
                     </a>
                 </div>
             </footer>
