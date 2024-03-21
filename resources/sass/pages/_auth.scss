@@ -1,5 +1,5 @@
 // body {
-//     height: 100vh;
+//     height: 120vh;
 //     overflow-y: auto;
 //     background-color: #181529;
 //     background-image: url(/img/pipes/silver.png);
@@ -10,16 +10,16 @@
 //     background-image: linear-gradient(45deg,#8177BB, #756AB4);
 //     opacity: 0.75;
 //     width: min(100vw - 20px, 400px);
-//     margin: 60px auto;
+//     margin: -50px auto;
 //     border-radius: 22px;
 //     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 // }
 
 // .auth-form__form {
-//     padding: 40px 30px;
+//     padding: 20px 10px;
 //     display: flex;
 //     flex-direction: column;
-//     gap: 16px;
+//     gap: 6px;
 // }
 
 // .auth-form__header {
@@ -499,10 +499,10 @@ body {
 
 .auth-form__site-logo-lateam {
     width: 30%;
-    margin-bottom: 50px;
+    margin-bottom: -90px;
 
     @media only screen and (min-width: 40em) {
-        width: 50%;     
+        width: 100%;     
     }
 }
 
@@ -531,7 +531,7 @@ body {
 .discord-div {
     display: flex;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 30px;
 }
 
 [x-cloak] {
