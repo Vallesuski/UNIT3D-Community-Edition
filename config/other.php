@@ -74,7 +74,7 @@ return [
     | Global Freeleech
     |
     */
-    'freeleech' => false,
+    'freeleech' => true,
 
     'freeleech_until' => '12/23/2017 3:00 PM EST',
 
