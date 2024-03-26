@@ -15,7 +15,7 @@
 <img src="/img/f1/logo.png" alt="F1Carreras" class="footer__icon" style="width: 300px;">
 </section>
 <section>
-<a title="Apoya a F1Carreras" href="https://f1carreras.xyz/pages/9"><img src="https://lat-team.com/img/dona.png" alt="Dona por Favor" class="footer__icon" style="width: 150px;">
+<a title="Apoya a F1Carreras" href="https://f1carreras.xyz/pages/8"><img src="https://lat-team.com/img/dona.png" alt="Dona por Favor" class="footer__icon" style="width: 150px;">
 
 	</section>
         <section class="footer__section">
