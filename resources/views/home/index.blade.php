@@ -4,7 +4,14 @@
 
 @section('main')
     @include('blocks.news')
-    @include('blocks.chat')
+
+    @if (! auth()->user()->chat_hidden)
+        <div id="vue">
+            <script src="{{ mix('js/chat.js') }}" crossorigin="anonymous"></script>
+            @include('blocks.chat')
+        </div>
+    @endif
+
     @include('blocks.featured')
     @include('blocks.poll')
     @include('blocks.top_torrents')
