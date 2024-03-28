@@ -94,7 +94,6 @@
                             length="39399"
                     />
                 </item>
-                </item>
             @endforeach
         @endif
     </channel>
