@@ -24,15 +24,15 @@
 }
 
 .meta__backdrop {
-    #position: #absolute;
+    position: absolute;
     z-index: -1;
     top: 72px;
     left: 0;
     right: 0;
-    #width: #100%;
+    width: 100%;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-    #filter: #var(--meta-backdrop-filter);
+    filter: var(--meta-backdrop-filter);
 }
 
 .meta__poster {
