@@ -33,7 +33,8 @@
                     @csrf
                     <a class="auth-form__branding" href="{{ route('home.index') }}">
                         <i class="fal fa-tv-retro"></i>
-                        <span class="auth-form__site-logo">{{ \config('other.title') }}</span>
+                        <img class="auth-form__site-logo-lateam" src="{{ url('/img/f1/logo.png') }}" alt="F1Carreras" />
+                        <!--<span class="auth-form__site-logo">{{ \config('other.title') }}</span>-->
                     </a>
                     @if ((config('other.invite-only') && ! request()->has('code')) || Session::has('warning') || Session::has('success') || Session::has('info'))
                         <ul class="auth-form__important-infos">
@@ -120,14 +121,20 @@
                         @if (config('captcha.enabled'))
                             @hiddencaptcha
                         @endif
-
-                        <button class="auth-form__primary-button">{{ __('auth.signup') }}</button>
+                        <div class="auth-form__button-container">
+                        <button class="auth-form__primary-button">SIGN UP</button>
                         @if (Session::has('errors'))
                             <ul class="auth-form__errors">
                                 @foreach ($errors->all() as $error)
                                     <li class="auth-form__error">{{ $error }}</li>
                                 @endforeach
                             </ul>
+                            </div>
+                            <div class="discord-div">
+                            <a class="discord-widget" href="https://discord.gg/vHYybyRc8h" title="Join us on Discord">
+                            <img src="https://discordapp.com/api/guilds/1219287190601990175/embed.png?style=banner3">
+                            </a>
+                            </div>
                         @endif
                     @endif
                 </form>
