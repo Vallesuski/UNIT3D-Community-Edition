@@ -46,5 +46,5 @@ return [
     'source'      => 'https://cdn.jsdelivr.net/gh/andreis/disposable-email-domains@master/domains.json',
     'cache-key'   => 'email.domains.blacklist',
     'auto-update' => true,
-    'append'      => 'qq.com|163.com',
+    'append'      => "qq.com|163.com",
 ];
