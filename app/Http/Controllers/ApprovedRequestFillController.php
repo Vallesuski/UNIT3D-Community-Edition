@@ -57,7 +57,7 @@ class ApprovedRequestFillController extends Controller
             'name'            => 'request',
             'cost'            => $torrentRequest->bounty,
             'receiver_id'     => $torrentRequest->filled_by,
-            'comment'         => sprintf('%s has filled %s and has been awarded %s BONUS.', $filler->username, $torrentRequest->name, $torrentRequest->bounty),
+            'comment'         => \sprintf('%s has filled %s and has been awarded %s BONUS.', $filler->username, $torrentRequest->name, $torrentRequest->bounty),
         ]);
 
         $filler->increment('seedbonus', $torrentRequest->bounty);
@@ -73,11 +73,11 @@ class ApprovedRequestFillController extends Controller
         // Auto Shout
         if ($torrentRequest->filled_anon) {
             $this->chatRepository->systemMessage(
-                sprintf('An anonymous user has filled request, [url=%s]%s[/url]', href_request($torrentRequest), $torrentRequest->name)
+                \sprintf('An anonymous user has filled request, [url=%s]%s[/url]', href_request($torrentRequest), $torrentRequest->name)
             );
         } else {
             $this->chatRepository->systemMessage(
-                sprintf('[url=%s]%s[/url] has filled request, [url=%s]%s[/url]', href_profile($filler), $filler->username, href_request($torrentRequest), $torrentRequest->name)
+                \sprintf('[url=%s]%s[/url] has filled request, [url=%s]%s[/url]', href_profile($filler), $filler->username, href_request($torrentRequest), $torrentRequest->name)
             );
         }
 
@@ -86,7 +86,7 @@ class ApprovedRequestFillController extends Controller
         }
 
         return to_route('requests.show', ['torrentRequest' => $torrentRequest])
-            ->withSuccess(sprintf(trans('request.approved-user'), $torrentRequest->name, $torrentRequest->filled_anon ? 'Anonymous' : $filler->username));
+            ->withSuccess(\sprintf(trans('request.approved-user'), $torrentRequest->name, $torrentRequest->filled_anon ? 'Anonymous' : $filler->username));
     }
 
     /**
@@ -111,7 +111,7 @@ class ApprovedRequestFillController extends Controller
             'name'            => 'request',
             'cost'            => $refunded,
             'sender_id'       => $torrentRequest->filled_by,
-            'comment'         => sprintf('%s has had %s unfilled and has forfeited %s BONUS.', $filler->username, $torrentRequest->name, $refunded),
+            'comment'         => \sprintf('%s has had %s unfilled and has forfeited %s BONUS.', $filler->username, $torrentRequest->name, $refunded),
         ]);
 
         $filler->decrement('seedbonus', $refunded);

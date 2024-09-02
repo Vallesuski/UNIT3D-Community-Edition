@@ -53,7 +53,7 @@ class UserPreWarning extends Notification
         return [
             'title' => $this->torrent->name.' Pre Warning Received',
             'body'  => 'You have received an automated PRE WARNING from the system because you failed to follow the Hit and Run rules in relation to Torrent '.$this->torrent->name,
-            'url'   => sprintf('/torrents/%s', $this->torrent->id),
+            'url'   => \sprintf('/torrents/%s', $this->torrent->id),
         ];
     }
 }

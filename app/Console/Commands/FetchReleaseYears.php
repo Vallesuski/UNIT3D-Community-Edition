@@ -59,8 +59,8 @@ class FetchReleaseYears extends Command
             ->whereNull('release_year')
             ->count();
 
-        $this->alert(sprintf('%s Torrents Already Have A Release Year Value!', $withyear));
-        $this->alert(sprintf('%s Torrents Are Missing A Release Year Value!', $withoutyear));
+        $this->alert(\sprintf('%s Torrents Already Have A Release Year Value!', $withyear));
+        $this->alert(\sprintf('%s Torrents Are Missing A Release Year Value!', $withoutyear));
 
         foreach ($torrents as $torrent) {
             $meta = null;
@@ -71,9 +71,9 @@ class FetchReleaseYears extends Command
                 if (isset($meta->first_air_date) && substr((string) $meta->first_air_date, 0, 4) > '1900') {
                     $torrent->release_year = substr((string) $meta->first_air_date, 0, 4);
                     $torrent->save();
-                    $this->info(sprintf('(%s) Release Year Fetched For Torrent %s ', $torrent->category->name, $torrent->name));
+                    $this->info(\sprintf('(%s) Release Year Fetched For Torrent %s ', $torrent->category->name, $torrent->name));
                 } else {
-                    $this->warn(sprintf('(%s) No Release Year Found For Torrent %s %s/torrents/%s', $torrent->category->name, $torrent->name, $appurl, $torrent->id));
+                    $this->warn(\sprintf('(%s) No Release Year Found For Torrent %s %s/torrents/%s', $torrent->category->name, $torrent->name, $appurl, $torrent->id));
                 }
             }
 
@@ -83,9 +83,9 @@ class FetchReleaseYears extends Command
                 if (isset($meta->release_date) && substr((string) $meta->release_date, 0, 4) > '1900') {
                     $torrent->release_year = substr((string) $meta->release_date, 0, 4);
                     $torrent->save();
-                    $this->info(sprintf('(%s) Release Year Fetched For Torrent %s ', $torrent->category->name, $torrent->name));
+                    $this->info(\sprintf('(%s) Release Year Fetched For Torrent %s ', $torrent->category->name, $torrent->name));
                 } else {
-                    $this->warn(sprintf('(%s) No Release Year Found For Torrent %s %s/torrents/%s', $torrent->category->name, $torrent->name, $appurl, $torrent->id));
+                    $this->warn(\sprintf('(%s) No Release Year Found For Torrent %s %s/torrents/%s', $torrent->category->name, $torrent->name, $appurl, $torrent->id));
                 }
             }
         }
